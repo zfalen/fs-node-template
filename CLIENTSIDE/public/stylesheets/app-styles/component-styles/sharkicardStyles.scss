@@ -1,0 +1,126 @@
+
+.sharkicard-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  z-index: 99999;
+  background: #fff;
+
+  #sharkHeader {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    button {
+      width: 10%;
+      margin: 10px;
+    }
+  }
+
+  h1 {
+    margin-right: auto;
+    padding-left: 50px;
+    font-weight: 900;
+  }
+}
+
+.sharkicard {
+  transform: scale(.85);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  height: 600px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  background: rgba(5,5,5,.1);
+  border: 10px solid #FFCF45;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(32,32,32,.15);
+
+  .primaryStats {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-top: 10px;
+
+    .name {
+      margin-left: 5%;
+      background: transparent;
+      border: none;
+      outline: none;
+      text-transform: capitalize;
+    }
+
+    .hp {
+      margin-right: -7.5%;
+    }
+
+    .remove {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      font-weight: 900;
+      color: red;
+      text-shadow: 1px 1px 1px rgba(32,32,32,.25);
+      position: relative;
+      right: 5px;
+      top: -15px;
+      width: 0;
+      outline: none;
+    }
+  }
+
+  .secondaryStats {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+
+    .ap, .pa, .sa, .trait {
+      width: 100%;
+      text-align: center;
+      line-height: 35px;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .trait {
+      font-size: 3rem;
+      margin-top: 25px;
+      &:before, &:after {
+        content: "\"";
+      }
+    }
+  }
+
+  .sharkImg {
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid #FFCF45;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 100%;
+      padding: 10%;
+      max-height: 300px;
+      display: block;
+    }
+  }
+
+  .errorMsg {
+    color: red;
+    font-weight: 900;
+  }
+}

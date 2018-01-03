@@ -1,0 +1,43 @@
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.ghostBtn {
+  margin-top: 25px;
+  background: transparent;
+  border: 1px solid #e03d37;
+  border-radius: 3px;
+  color: #e03d37;
+  font-weight: 300;
+  font-size: 1.75rem;
+  outline: none;
+  padding: 25px;
+  cursor: pointer;
+
+  &:hover {
+    background: #e03d37;
+    color: #fff;
+  }
+}
+
+#formHolder {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+
+}

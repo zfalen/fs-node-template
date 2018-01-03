@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <%- include ./partials/head.ejs %>
+
+  <body>
+
+    <div id="landing" class="errorPageContent" >
+      <div class="panel-container">
+
+        <div class="messageContainer" class="lp-left">
+
+          <% if (locals.errorType === 404) { %>
+            <h1>Whoops! That page can't be found.</h1>
+          <% } else { %>
+            <h1>SOMETHING WENT WRONG</h1>
+            <p><%- message %></p>
+          <% } %>
+
+        </div>
+
+        <div class="lp-right">
+
+          <% if (locals.errorType === 404) { %>
+            <img src="/images/404.jpg" border="0" />
+          <% } else { %>
+            <img src="/images/oops.jpg" border="0" />
+          <% } %>
+
+        </div>
+
+        <div class="ghostBtn" onclick="window.location.href = '/'" >BACK HOME</div>
+
+        <div class="clear"></div>
+      </div><!-- .panel-container -->
+    </div><!-- #landing -->
+    <script type="text/javascript">
+      var err = <% if (locals.error) { %> <%-JSON.stringify(locals.error) %> <% } else { %> <%= "undefined"  %> <% } %>;
+      if (err){
+        console.log(err);
+      }
+    </script>
+
+  </body>
+</html>

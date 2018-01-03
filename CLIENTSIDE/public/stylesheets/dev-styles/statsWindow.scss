@@ -1,0 +1,37 @@
+
+#statsWindow {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  z-index: 999999 !important;
+  background: #e03d37;
+  box-shadow: 4px 4px 4px rgba(32,32,32,.75);
+  padding: 25px;
+
+  p {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+  }
+
+  ul {
+    padding: 10px !important;
+    margin-bottom: 25px !important;
+  }
+}
+
+#statsBtn {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  bottom: 35px;
+  width: 100%;
+  z-index: 9999999999;
+}

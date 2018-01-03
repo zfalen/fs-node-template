@@ -1,0 +1,34 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "extends": "airbnb",
+    "rules": {
+      "array-bracket-spacing": ["error", "always", { "singleValue": false }],
+      "class-methods-use-this": "off",
+      "max-len": "off",
+      "padded-blocks": ["error", { "classes": "always" }],
+      "camelcase": ["warn", { "properties": "never" }],
+      "comma-dangle": ["error", "never"],
+      "global-require": "off",
+      "no-unused-expressions": "off",
+      "no-return-assign": "off",
+      "no-param-reassign": "off",
+      "no-plusplus": "off",
+      "no-underscore-dangle": "off",
+      "jsx-a11y/href-no-hash": "off",
+      "jsx-a11y/no-noninteractive-element-interactions": "off",
+      "jsx-a11y/no-noninteractive-tabindex": "off",
+      "jsx-quotes": ["error", "prefer-single"],
+      "react/no-find-dom-node": "off",
+      "react/prop-types": "off",
+      "react/jsx-wrap-multilines": ["error", {"arrow": false, "declaration": false}],
+      "react/sort-comp": ["warn", { "order": [ 'observable', 'computed', 'static-methods', 'lifecycle', 'everything-else', 'render' ] }],
+      "react/no-multi-comp": "off",
+      "react/jsx-max-props-per-line": "off",
+      "react/jsx-first-prop-new-line": "off",
+      "react/no-unescaped-entities": "off"
+    }
+}

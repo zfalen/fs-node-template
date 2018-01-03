@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  <%- include ./partials/head %>
+
+  <body>
+    <div id="formHolder">
+      <img src='/images/par_logo_color.png'/>
+      <h1>Full Stack App Template</h1>
+      <p>Login To See The App</p>
+      <form action="/login" method="post">
+        <div>
+          <i class="fa fa-user"></i>
+          <input type="text" name="username"/>
+        </div>
+        <div>
+          <i class="fa fa-unlock-alt"></i>
+          <input type="password" name="password"/>
+        </div>
+        <div>
+          <input class="ghostBtn" type="submit" value="Log In" id="submit"/>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
