@@ -27,17 +27,17 @@ export default class UserProfile extends Component {
 
         <h4 id='userEditMessage' hidden={!store.editing}>EDITING PROFILE</h4>
         <div id='userImg' style={{ backgroundImage: `url(${user.imgUrl}), linear-gradient(60deg, rgba(255,255,255,.75) 0%, rgba(0,0,0,.5) 100%)` }} />
-        <input type='text' id='userImgChanger' className='secretInput' value={user.imgUrl} hidden={!store.editing} onChange={e => this.updateField('imgUrl', e)}></input>
+        <input type='text' id='userImgChanger' className='secretInput' value={user.imgUrl} hidden={!store.editing} onChange={e => this.updateField('imgUrl', e)} />
 
-        <input type='text' id='userName' className='secretInput' value={user.name} readOnly={!store.editing} onChange={(e) => this.updateField('name', e)}></input>
-        <input type='text' id='userTagline' className='secretInput' value={user.tagline} readOnly={!store.editing} onChange={e => this.updateField('tagline', e)}></input>
+        <input type='text' id='userName' className='secretInput' value={user.name} readOnly={!store.editing} onChange={e => this.updateField('name', e)} />
+        <input type='text' id='userTagline' className='secretInput' value={user.tagline} readOnly={!store.editing} onChange={e => this.updateField('tagline', e)} />
 
         <div id='userStats'>
-          <h3 id='userRank'><i className='fa fa-trophy'></i> <input type='text' className='secretInput' value={user.rank} readOnly={!store.editing} onChange={(e) => this.updateField('rank', e)}></input></h3>
-          <h3><i className='fa fa-tint'></i> {store.totalSharks} Sharkicorns</h3>
+          <h3 id='userRank'><i className='fa fa-trophy' /> <input type='text' className='secretInput' value={user.rank} readOnly={!store.editing} onChange={e => this.updateField('rank', e)} /></h3>
+          <h3><i className='fa fa-tint' /> {store.totalSharks} Sharkicorns</h3>
         </div>
       </div>
-    )
+    );
   }
 
 }
