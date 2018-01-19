@@ -54,9 +54,9 @@ app.set('view cache', false);
 // FORCE ALL REQUESTS ACROSS SSL IN HEROKU
 // PRODUCTION MODE ONLY BY DEFAULT
 // DISABLED WHEN SIMULATING PRODUCTION MODE LOCALLY
-if(process.env.HOST_MODE !== 'localdev') {
-  // app.use(ssl());
-}
+// if(process.env.HOST_MODE !== 'localdev') {
+//   app.use(ssl());
+// }
 
 // PARSING REQUESTS
 app.use(bodyParser.json());

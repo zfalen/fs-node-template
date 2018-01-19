@@ -67,12 +67,9 @@ export default class APP_STORE {
     }
   }
 
-  // THIS NEEDS TO USE SAVE TO DB
   @action async toggleEditing() {
     if (this.editing) {
-      const reqBody = JSON.stringify(this.user);
-      await fetch('/api', { method: 'POST', body: reqBody, headers: { 'content-type': 'application/json', accept: 'application/json' } });
-      this.editing = !this.editing;
+      this.saveToDB();
     } else {
       this.editing = !this.editing;
     }
