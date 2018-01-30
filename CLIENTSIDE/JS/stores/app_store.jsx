@@ -67,9 +67,10 @@ export default class APP_STORE {
     }
   }
 
-  @action async toggleEditing() {
+  @action toggleEditing() {
     if (this.editing) {
       this.saveToDB();
+      this.editing = !this.editing;
     } else {
       this.editing = !this.editing;
     }
@@ -77,8 +78,7 @@ export default class APP_STORE {
 
   @action async saveToDB() {
     const reqBody = JSON.stringify(this.user);
-    await fetch('/api', { method: 'POST', body: reqBody });
-    this.toggleEditing();
+    await fetch('/api', { method: 'POST', body: reqBody, headers: {'content-type': 'application/json'} });
   }
 
   @action addShark() {
