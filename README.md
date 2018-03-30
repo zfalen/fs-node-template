@@ -1,8 +1,8 @@
-# PartnersCreative Full Stack JS Starter Template
+# Full Stack JS Starter Template
 
 ###### A clean-and-simple starting point for full stack applications.
 
-*This template is intended to let ParC developers get started on the fun parts of dev right away, without having to do the boilerplate Node / HTTP setup.*
+*This template is intended to let you get started on the fun parts of dev right away, without having to do the boilerplate Node / HTTP setup.*
 
 ---
 
